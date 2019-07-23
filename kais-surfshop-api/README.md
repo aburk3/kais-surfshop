@@ -1,24 +1,19 @@
-# README
+# GET /api/surfboard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# GET /api/surfboard/:id
 
-Things you may want to cover:
+# POST /api/surfboard
 
-* Ruby version
+# PUT /api/surfboard/:id
 
-* System dependencies
+# DELETE /api/surfboard/:id
 
-* Configuration
+# Surfboard Model
 
-* Database creation
+# name
 
-* Database initialization
+# price
 
-* How to run the test suite
+# img_url
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# length
