@@ -1,22 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import SurfboardCard from '../components/SurfboardCard';
 import './Surfboards.css';
 
-const Surfboards = props => (
-  <div className="SurfboardsContainer">
-    <h1>Surfboards Component</h1>
-    {props.surfboards.map(surfboard => (
-      <div key={surfboard.id} className="SurfboardCard">
-        <h3>{surfboard.name}</h3>
-        <p>Price: ${surfboard.price}</p>
-        <img
-          className="SurfboardImage"
-          src={surfboard.img_url}
-          alt={surfboard.name}
-        />
-        <p>Length: {surfboard.length} inches</p>
+class Surfboards extends Component {
+  render() {
+    return (
+      <div className="SurfboardsContainer">
+        <h1>Surfboards Component</h1>
+        {this.props.surfboards.map(surfboard => (
+          <SurfboardCard key={surfboard.id} surfboard={surfboard} />
+        ))}
       </div>
-    ))}
-  </div>
-);
+    );
+  }
+}
 
 export default Surfboards;
